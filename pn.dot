@@ -1,0 +1,16 @@
+digraph G {
+subgraph place {
+node [shape=circle, width=.5];
+"p0" [label="1", xlabel="p0"];
+"p1" [label="2", xlabel="p1"];
+}
+subgraph transitions {
+node [shape=rect, width=.5, height=.5];
+"t0";
+"t1";
+}
+"p0" -> "t0";
+"t0" -> "p1";
+"p1" -> "t1";
+"t1" -> "p0";
+}
